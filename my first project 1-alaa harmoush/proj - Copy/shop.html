@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <script src="https://kit.fontawesome.com/5aee64b0be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/Store.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="LOGO.png" alt="" width="100" height="100"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="proj.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="cart.html" class=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+            </ul>
+            
+        </div>
+    </section>                
+    <div class="cartt" id="cartt">
+        <i class="fa-solid fa-bag-shopping cartinweb"></i><hr/>
+        <div id="titlee"></div>
+        <a href="#"><button id="submitbtnnshop">submit</button></a>
+    </div>
+    <section id="products1">
+        <div class="ProdContainer">
+            <div class="prod" id="item1">
+                <img src="./imges/capimg.webp" alt="">
+                <div class="desc">
+                    <span>Ferrari</span>
+                    <h5>Ferrari SPTWR Race BB Cap </h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>50$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item1)"></i>
+            </div>
+            <div class="prod" id="item2">
+                <img src="./imges/hod1.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>Alpha Holiday Half-Zip PF Sportstyle/Core Boys</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item2)"></i>
+            </div>
+            <div class="prod" id="item3">
+                <img src="./imges/hod2.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>Alpha Hoodie Fleece B Sportstyle/Core Boys </h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item3)"></i>
+            </div>
+            <div class="prod" id="item4">
+                <img src="./imges/sp1.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>PUMA Power Sweatpants TR cl Sportstyle/Core Men</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>70$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item4)"></i>
+            </div>
+            <div class="prod" id="item5">
+                <img src="./imges/sh1.webp" alt="">
+                <div class="desc">
+                    <span>Ferrari</span>
+                    <h5>Ferrari RS-Simul8 Motorsport Men</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item5)"></i>
+            </div>
+            <div class="prod" id="item6">
+                <img src="./imges/sh2.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>Ferrari RS-Simul8 Motorsport Men</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item6)"></i>
+            </div>
+            <div class="prod" id="item7">
+                <img src="./imges/sh3.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>PWRFrame TR Running/Training Men</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item7)"></i>
+            </div>
+            <div class="prod" id="item8">
+                <img src="./imges/sh4.webp" alt="">
+                <div class="desc">
+                    <span>PUMA</span>
+                    <h5>Pure XT Re:Collection Running/Training Men</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>60$</h4>
+                </div>
+                <i class="fa-solid fa-cart-arrow-down cart" onclick="addToCart(item8)"></i>
+            </div>
+        </div>
+        <div class="popUpImg">
+            <span>&times;</span>
+            <img src="capimg.webp" alt="">
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.ProdContainer img').forEach(image => {
+            image.onclick = ()=>{
+                document.querySelector('.popUpImg').style.display = 'block'
+                document.querySelector('.popUpImg img').src = image.getAttribute('src')
+            }
+        })
+
+        document.querySelector('.popUpImg span').onclick = ()=> {
+            document.querySelector('.popUpImg').style.display = 'none'
+        }
+    </script>
+
+
+
+    <script src="./js/store.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
